@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width">
+    <script src="../../u1/tests/test-init.js" type=module></script>
+
+    <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/base.css/full.css">
+    <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/variables.min.css">
+    <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/classless.min.css">
+    <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/more.min.css">
+    <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/aria.min.css">
+    <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/simple.min.css">
+
+    <script src="../confirm.js" type=module></script>
+
+
+<body>
+
+<section>
+
+    <h2>Tests</h2>
+
+    <form u1-confirm="send form?" id=theForm>
+        <label>
+            <input name="x">
+        </label>
+        <button u1-confirm="form send using btn?">send confirm</button>
+        <button>send (u1-confirm-attr on the form element)</button>
+    </form>
+
+    <button onclick="theForm.requestSubmit()">requestSubmit</button>
+
+    <h2>Using new FormData (and preventDefault)</h2>
+
+    <form u1-confirm="send form?" id=theForm2>
+        <label>
+            <input name="y">
+        </label>
+        <button>send</button>
+    </form>
+
+    <script>
+        theForm2.addEventListener('submit',e=>{
+            e.preventDefault();
+            var data = new FormData(theForm2)
+            console.log(data)
+        });
+    </script>
+
+    <h2>Not form related (not working! implemented if needed)</h2>
+
+    <button u1-confirm="test" onclick="alert('clicked')">without form</button>
+    <a u1-confirm="open U1Ui on github?" href="https://github.com/u1ui/u1" target="_blank">a link</a>
+
+</section>
