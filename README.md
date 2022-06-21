@@ -1,11 +1,6 @@
 # [u1-confirm] - attribute
 Conform before action
 
-## Demos
-
-https://raw.githack.com/u1ui/confirm.attr/main/tests/minimal.html  
-https://raw.githack.com/u1ui/confirm.attr/main/tests/test.html
-
 ## Ussage
 
 ```html
@@ -21,10 +16,10 @@ https://raw.githack.com/u1ui/confirm.attr/main/tests/test.html
 <script src="https://cdn.jsdelivr.net/gh/u1ui/confirm.attr@1.0.0/confirm.min.js" type=module>
 ```
 
-## Demo
+## Demos
 
-https://raw.githack.com/u1ui/confirm.attr/main/tests/minimal.html  
-https://raw.githack.com/u1ui/confirm.attr/main/tests/test.html  
+[minimal.html](https://raw.githack.com/u1ui/confirm.attr/main/tests/minimal.html)  
+[test.html](https://raw.githack.com/u1ui/confirm.attr/main/tests/test.html)  
 
 ## About
 
