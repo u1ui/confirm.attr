@@ -1,5 +1,5 @@
 # [u1-confirm] - attribute
-Conform before action
+Confirm before action
 
 ## Ussage
 
