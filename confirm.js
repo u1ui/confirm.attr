@@ -1,5 +1,4 @@
 
-
 let resentConfirmed = false;
 
 document.addEventListener('submit', async e=>{
