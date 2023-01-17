@@ -16,7 +16,7 @@ document.addEventListener('submit', async e=>{
         let msg = getMessage(element);
         e.preventDefault();
         e.stopImmediatePropagation();
-        let {confirm} = await import('../dialog.js@3.0.2/dialog.js');
+        let {confirm} = await import('../dialog.js@3.2.0/dialog.js');
         let ok = await confirm(msg);
         if (ok) {
             resentConfirmed = true;
