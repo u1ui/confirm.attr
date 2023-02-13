@@ -13,7 +13,7 @@ Confirm before action
 ## Install
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/u1ui/confirm.attr@1.0.0/confirm.min.js" type=module>
+<script src="https://cdn.jsdelivr.net/gh/u1ui/confirm.attr@x.x.x/confirm.min.js" type=module>
 ```
 
 ## Demos
