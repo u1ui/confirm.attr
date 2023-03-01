@@ -15,7 +15,7 @@ document.addEventListener('submit', async e=>{
         let msg = getMessage(element);
         e.preventDefault();
         e.stopImmediatePropagation();
-        let {confirm} = await import('../dialog.js@3.2.0/dialog.js');
+        let {confirm} = await import('../dialog.js@3.6.0/dialog.js');
         let ok = await confirm(msg);
         if (ok) {
             resentConfirmed = true;
@@ -39,7 +39,7 @@ document.addEventListener('click', async e=>{
     e.preventDefault();
     e.stopImmediatePropagation();
 
-    let {confirm} = await import('../dialog.js@3.0.2/dialog.js');
+    let {confirm} = await import('../dialog.js@3.6.0/dialog.js');
     let msg = getMessage(element);
     let ok = await confirm(msg);
     if (ok) {
