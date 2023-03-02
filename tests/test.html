@@ -25,13 +25,21 @@
         <label>
             <input name="x">
         </label>
-        <button u1-confirm="Send form using btn?">send confirm</button>
-        <button>send (u1-confirm-attr on the form element)</button>
+        <br>
+        <button u1-confirm="Send form using btn?">
+            send
+            <small>(u1-confirm on the button element)</small>
+        </button>
+        <br>
+        <button>
+            send
+            <small>(u1-confirm on the form element)</small>
+        </button>
     </form>
 
     <button onclick="theForm.requestSubmit()">requestSubmit</button>
 
-    <h2>Using submit-event (and preventDefault)</h2>
+    <h2>Using submit-event <small>(and preventDefault)</small></h2>
 
     <form u1-confirm="send form?" id=theForm2>
         <label>
@@ -48,9 +56,28 @@
         });
     </script>
 
-    <h2>Not form related (not working! implemented if needed)</h2>
+    <h2>Not form related Button</h2>
 
-    <button u1-confirm="test" onclick="alert('clicked')">without form</button>
+    <button u1-confirm="Would you like an alert()?" onclick="alert('clicked')">
+        without form
+        <small>klick me</small>
+    </button>
+
+    <h2>No message (default message)</h2>
+    <button u1-confirm onclick="alert('clicked')" lang=en>
+        [lang="en"]
+    </button>
+
+    <button u1-confirm onclick="alert('clicked')" lang=de>
+        [lang="de"]
+    </button>
+
+    <button u1-confirm onclick="alert('clicked')" lang=fr>
+        [lang="fr"]
+    </button>
+
+    <h2>Link (not working! implemented if needed)</h2>
+
     <a u1-confirm="open U1Ui on github?" href="https://github.com/u1ui/u1" target="_blank">a link</a>
 
 </section>

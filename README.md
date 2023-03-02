@@ -1,6 +1,13 @@
 # [u1-confirm] - attribute
 Confirm before action
 
+## Features
+- Interupts form submit and requestSubmit
+- Interupts click on button
+- Uses native Dialog-Element (unstyled)
+- Has a translated default confirm text
+- Lightweight
+
 ## Ussage
 
 ```html
@@ -25,4 +32,3 @@ Confirm before action
 
 - MIT License, Copyright (c) 2022 <u1> (like all repositories in this organization) <br>
 - Suggestions, ideas, finding bugs and making pull requests make us very happy. ♥
-
