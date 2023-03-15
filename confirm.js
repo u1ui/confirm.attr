@@ -37,7 +37,7 @@ async function confirmEvent(e, element, then){
     // const {confirm} = await import('../dialog.js@3.6.0/dialog.js').catch(e=>{
     //     return {confirm: window.confirm};
     // });
-    const {confirm} = await import('../dialog.js@3.6.2/dialog.js');
+    const {confirm} = await import('../dialog.js@3.6.4/dialog.js'); // import('https://cdn.jsdelivr.net/gh/u1ui/dialog.js@3.6.4/dialog.js');
     const lang = langOf(element);
     const ok = await confirm({
         body: getMessage(element, lang),
