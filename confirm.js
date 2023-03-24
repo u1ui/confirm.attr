@@ -13,9 +13,7 @@ document.addEventListener('submit', e=>{
     if (btn && btn.hasAttribute('u1-confirm')) element = btn;
     if (!element) return;
 
-    confirmEvent(e, element, ()=>
-        form.requestSubmit(btn)
-    );
+    confirmEvent(e, element, ()=> form.requestSubmit(btn) );
 },true);
 
 // click
@@ -26,9 +24,7 @@ document.addEventListener('click', e=>{
     if (!element) return;
     if (element.form && element.type==='submit') return; // handled by submit event. What about "reset"?
 
-    confirmEvent(e, element, ()=>
-        element.click()
-    );
+    confirmEvent(e, element, ()=> element.click() );
 },true);
 
 async function confirmEvent(e, element, then){
