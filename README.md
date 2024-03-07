@@ -9,7 +9,7 @@ Confirm before action
 - Has a translated default confirm text
 - Lightweight
 
-## Ussage
+## Usage
 
 ```html
 <form u1-confirm="Save name?" target=_blank>
@@ -21,7 +21,7 @@ Confirm before action
 ## Install
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/u1ui/confirm.attr@x.x.x/confirm.min.js" type=module>
+<script src="https://cdn.jsdelivr.net/gh/u1ui/confirm.attr@x.x.x/confirm.min.js" type=module></script>
 ```
 
 ## Demos
